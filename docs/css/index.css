@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --main-color: #6200ea;
+    --text-color: #212121;
+    --bg-color: #f5f5f5;
+    --link-color: #6200ea;
+    --hover-color: #3700b3;
+    --border-radius: 4px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, main {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+#user-info {
+    margin: 10px auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#user-info {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+#user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+#user-name, #user-login {
+    color: var(--text-color);
+    margin: 4px 0;
+}
+
+#user-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#user-login {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.search-form {
+    margin: 10px auto;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.label__input {
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    outline: none;
+}
+
+.search-form__input--submit {
+    border-radius: var(--border-radius);
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    width: 100%;
+}
+
+.search-form__info {
+    color: var(--text-color);
+    font-size: 0.75rem;
+    margin-top: 10px;
+}
+
+.info__link {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+#project-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.project {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    padding: 16px;
+    margin: 10px;
+    width: calc(50% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-name {
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.project-description {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.button-go-to-repo {
+    background-color: var(--main-color);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.button-go-to-repo:hover {
+    background-color: var(--hover-color);
+}
